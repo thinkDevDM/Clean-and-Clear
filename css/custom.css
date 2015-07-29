@@ -1,0 +1,191 @@
+body {
+	margin-top: 50px;
+}
+
+.pad-top-10 {
+	padding-top: 10px;
+}
+
+.pad-top-20 {
+	padding-top: 20px;
+}
+
+.pad-top-30 {
+	padding-top: 30px;
+}
+
+.well {
+	background: #ffffff !important;
+}
+
+.top-bar {
+	height: 5px;
+	background: #ca2129;
+	margin-bottom: 1px;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.navbar li:hover {
+	background: #e7e7e7;
+}
+
+li.login a{
+	background: #ca2129;
+	color: #ffffff !important;
+	padding-right: 22px;
+	padding-left: 22px;
+}
+
+li.login a:hover {
+	background: #cccccc;
+	color: #ca2129 !important;
+	font-weight: bold;
+}
+
+li.register a{
+	background: #2f98cc;
+	color: #ffffff !important;
+}
+
+li.register a:hover {
+	background: #cccccc;
+	color: #2f98cc !important;
+	font-weight: bold;
+}
+
+.jumbotron {
+	background: url(../images/waterdrop.jpg) no-repeat 50% 0;
+	height: 350px;
+	padding: 0;
+}
+
+.jumbotron [class*="col-"] {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #eee;
+	border: 1px solid #ddd;
+	background-color: rgba(86,61,124,.15);
+	border: 1px solid rgba(86,61,124,.2);
+	overflow: auto;
+	height: 350px;
+}
+
+.jumbotron-content {
+	color: #ffffff;
+}
+
+.jumbotron h1 {
+	font-size: 2.125em;
+	border-bottom: 1px solid #ffffff;
+	padding-bottom: 10px;
+}
+
+.bluebox {
+	background: #2e98cc;
+	overflow: hidden;
+	height: 230px;
+	color: #ffffff;
+	padding:0 10px;
+	font-size: 120%;
+}
+
+.bluebox a.readmore {
+	position: absolute;
+	bottom: 15px;
+	left: 30px;
+	background: #2b8cbc;
+	padding: 10px 15px;
+	color: white;
+}
+
+.bluebox a.readmore:hover {
+	background: #20749d;
+}
+
+.redbox {
+	background: #ca2129;
+	overflow: hidden;
+	height: 230px;
+	color: #ffffff;
+	padding:0 10px;
+	font-size: 120%;
+}
+
+.redbox a.readmore {
+	position: absolute;
+	bottom: 15px;
+	left: 30px;
+	background: #bf1e26;
+	padding: 10px 15px;
+	color: white;
+}
+
+.redbox a.readmore:hover {
+	background: #86161b;
+}
+
+.media-body {
+	font-size: 120%;
+}
+
+.panel-default > .panel-heading {
+	background: #2e98cc;
+	color: #ffffff;
+}
+
+a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+	background: #ca2129;
+	border: #ca2129;
+}
+
+.grey-list a.list-group-item.active, .grey-list a.list-group-item.active:hover, .grey-list a.list-group-item.active:focus {
+	background: #f4f4f4;
+	border: #cccccc;
+	color: #666666;
+}
+
+#tooltip1, #tooltip2 {
+	color: #ffffff;
+	border-bottom: 1px dotted #ffffff;
+}
+
+#tooltip1:hover, #tooltip2:hover {
+	text-decoration: none;
+}
+
+footer {
+	text-align: center;
+	padding: 20px 0;
+	font-weight: bold;
+	background: #f4f4f4;
+}
+
+footer p {
+	font-weight: normal;
+}
+
+footer a:hover {
+	text-decoration: none;
+}
+
+/************** 
+Tablets & iPads 
+***************/
+@media screen and (min-width: 765) and (max-width: 1075) {
+	.navbar-header .navbar-brand {
+		display: block !important;
+		margin: 0 auto !important;
+	}
+
+	.nav .navbar-nav {
+		display: block !important;
+		margin: 0 auto !important;
+	}
+
+	.navbar {
+		margin-bottom: 5px;
+	}
+}

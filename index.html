@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta declarations -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Clean & Clear</title>
+
+    <!-- Bootstrap Main CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    
+    <!-- Bootstrap Main jQuery -->
+    <script src="js/jquery.js"></script>
+    
+    <!-- Bootstrap Main JavaScript -->
+    <script src="js/bootstrap.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
+  </head>
+
+  <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="top-bar"></div><!-- "top-bar" is Custom CSS -->
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Clean Water Image"></a><!-- Logo -->
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="home.html">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Innovate <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="innovate.html">Learn</a></li>
+              <li><a href="innovate.html">Create</a></li>
+              <li><a href="innovate.html">Teach</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+          <li class="login" data-toggle="modal" data-target="#loginModal"><a href="#">Login</a></li>
+          <li class="register" data-toggle="modal" data-target="#regModal"><a href="#">Register</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- Modal for Login -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="loginModalLabel">Login Form</h4>
+        </div>
+        <div class="modal-body">
+          <!-- Login Form -->
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Remember me
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form><!-- /Form -->
+        </div>
+        <div class="modal-footer">
+          <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Sign In</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /login modal -->
+
+  <!-- modal for register -->
+  <div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="regModalLabel">Login Form</h4>
+        </div>
+        <div class="modal-body">
+          <!-- login form -->
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Enter name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">Confirm Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Confirm password">
+              </div>
+            </div>
+          </form><!-- /form -->
+        </div>
+        <div class="modal-footer">
+          <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Sign Up</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /register modal -->
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-md-offset-5">
+            <div class="jumbotron-content">
+              <h1>Clean & Clear HTML5 Template</h1>
+              <p class="lead">Clean & Clear is a responsive HTML5 template based on the Twitter Bootstrap Framework</p>
+            </div><!-- /jumbotron-content -->
+          </div><!-- /cols -->
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </div><!-- /jumbotron -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="bluebox">
+            <h3><span class="glyphicon glyphicon-book"></span> Learn...</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <a href="#" id="tooltip1" data-toggle="tooltip" title="This is a tooltip!">sed do eiusmod</a>
+            tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam.</p>
+            <a class="readmore" href="#">Read More</a>
+          </div><!-- end of color box div -->
+        </div><!-- end of first column -->
+        <div class="col-md-4">
+          <div class="redbox">
+            <h3><span class="glyphicon glyphicon-edit"></span> Create...</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <a href="#" id="tooltip2" data-toggle="tooltip" title="This is another tooltip!">tempor incididunt</a> ut labore et dolore magna aliqua.  Ut enim ad minim veniam.</p>
+            <a class="readmore" href="#">Read More</a>
+          </div><!-- end of color box div -->
+        </div><!-- end of second column -->
+        <div class="col-md-4">
+          <div class="bluebox">
+            <h3><span class="glyphicon glyphicon-apple"></span> Teach...</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <a class="readmore" href="#">Read More</a>
+          </div><!-- end of color box div -->
+        </div><!-- end of third column -->
+      </div><!-- end of first row in body -->
+      <div class="row pad-top-30">
+        <div class="col-md-8">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">What's Happening in the World?</h3>
+            </div><!-- end of panel heading -->
+            <div class="panel-body">
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object img-circle" src="images/small1.jpg" alt="Sample Image">
+                  </a>
+                </div><!-- end of media object -->
+                <div class="media-body">
+                  <h4 class="media-heading">Media heading</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur.</p>
+                </div><!-- end of media body -->
+              </div><!-- end of media -->
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object img-circle" src="images/small2.jpg" alt="Sample Image">
+                  </a>
+                </div><!-- end of media object -->
+                <div class="media-body">
+                  <h4 class="media-heading">Media heading</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur.</p>
+                </div><!-- end of media body -->
+              </div><!-- end of media -->
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object img-circle" src="images/small3.jpg" alt="Sample Image">
+                  </a>
+                </div><!-- end of media object -->
+                <div class="media-body">
+                  <h4 class="media-heading">Media heading</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur.</p>
+                </div><!-- end of media body -->
+              </div><!-- end of media -->
+            </div><!-- end of panel body -->
+          </div><!-- end of panel -->
+        </div><!-- end of column -->
+        <!-- sidebar -->
+        <div class="col-md-4">
+          <div class="list-group">
+            <a href="#" class="list-group-item active">
+              Cras justo odio
+            </a>
+            <a href="#" class="list-group-item">About</a>
+            <a href="#" class="list-group-item">Innovate</a>
+            <a href="#" class="list-group-item">Blog</a>
+            <a href="#" class="list-group-item">Contact Us</a>
+          </div><!-- end of first list group -->
+          <div class="grey-list list-group">
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">List group item heading</h4>
+              <p class="list-group-item-text">Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </a>
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">List group item heading</h4>
+              <p class="list-group-item-text">Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </a>
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">List group item heading</h4>
+              <p class="list-group-item-text">Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </a>
+          </div><!-- end of second list group -->
+          <a tabindex="0" class="btn btn-lg btn-info" role="button" data-toggle="popover" data-placement="top" data-trigger="focus" title="Thank You!" data-content="Thanks for viewing my project.  I hope you enjoyed it.  I know I did.">Click for Message</a>
+        </div><!-- end of sidebar column -->
+      </div><!-- end of row pad-top-30 -->
+    </div><!-- end of body container -->
+    <footer>
+      Copyright &copy; 2015, Clean & Clear
+      <br/>
+      <p>A portfolio project by Drew Mery through the Eduonix course: <a href="http://stackskills.com/courses/learn-responsive-web-development-from-scratch" target="_blank">Learn Responsive Web Design from Scratch</a></p>
+    </footer>
+  </body>
+
+</html>
